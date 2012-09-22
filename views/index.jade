@@ -1,0 +1,17 @@
+h1= title
+p Welcome to #{title}
+h4 By @danmendieta
+
+form(method="post")
+  label De:
+  input(type="email",required,name="mailde")
+  br
+  label Para:
+  input(type="email", required,name="mailpara") 
+  br
+  label Mensaje:
+  br
+  textarea(cols="45", rows="8", name="mailmensaje")
+  br
+  input(type="submit", value="Enviar Correo").submit
+  div.mensaje=mensaje
